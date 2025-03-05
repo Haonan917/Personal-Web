@@ -1,0 +1,228 @@
+<template>
+  <div>
+    <div v-if="show" id="main">
+      <div class="title">
+        <a class="title_link" id="" href="#">Personal Statement</a>
+        <a class="switch_link" @click="show = !show" href="#">[切换到中文版]</a>
+      </div>
+
+      <div class="content">
+        I will introduce myself from the following aspects:
+
+        <p class="title">1. Academic Background</p>
+
+        <p>
+          I attended Shenzhen Hongling High School for my high school education.
+          In my freshman year, I enrolled in the Experimental Class for
+          Engineering at Xi'an Jiaotong University, specializing in electrical
+          engineering. In my sophomore year, I transferred to the Artificial
+          Intelligence Experimental Class at Xi'an Jiaotong University. In my
+          junior year, I went to the University of Manitoba in Canada for an
+          exchange program.
+        </p>
+
+        <p>
+          I have excelled in my studies. In my freshman year, I achieved a
+          comprehensive GPA of 91.05, ranking 4th out of 1138 students and
+          receiving the National Scholarship as the top student in my college.
+          In my sophomore year, I achieved a comprehensive GPA of 92.43, ranking
+          3rd out of 70 students in my college and receiving the Megvii
+          Scholarship. I have excellent English proficiency with a CET-4 score
+          of 603 and a TOEFL score of 89. I have participated in various
+          competitions and won the Silver Award in the International Genetically
+          Engineered Machine Competition (iGEM) as the leader of the hardware
+          and wet lab teams. As a presenter, I participated in the
+          national-level innovation project "AR Scene Navigation in
+          Short-Distance Scenarios," which stood out among 47 projects in the
+          Telecommunications Department and received an excellent evaluation
+          after the final defense. I also participated as a presenter in the
+          national-level innovation project "Diagnosis and Clinical
+          Decision-Making of Adrenal Tumors Based on Deep Learning," where I was
+          responsible for building models and other critical tasks. This project
+          also received an excellent evaluation after the defense. In the first
+          two years of university, I have established a solid foundation in my
+          major. I have taken a total of 7 math courses with a cumulative GPA of
+          94.6 and achieved high scores in artificial intelligence-related
+          courses with a cumulative GPA of 94.6. Some of my course grades
+          include: Computational Neural Engineering (99), Cognitive Psychology
+          (99), Social Psychology (98), Probability, Statistics, and Random
+          Processes (98), University Physics II (98), University Physics I (97),
+          Data Structures and Algorithms (95), Linear Algebra Combined with
+          Analytical Solution (94), Calculus I (93), Computer System
+          Architecture (92), and Calculus II (92). Through a series of
+          selections, I obtained funding from the China Scholarship Council
+          (CSC) and became one of the three students from Xi'an Jiaotong
+          University to study abroad at the University of Manitoba in Canada
+          during my junior year. My diligent and serious attitude towards
+          learning has been recognized by my teachers. Professor Pengju Ren from
+          Xi'an Jiaotong University once commented, "Youcheng Li was one of the
+          best students of mine in the last several years. Based on his solid
+          knowledge, he quickly adapted to multiple tasks assigned to him and
+          had innovative minds on the course."
+        </p>
+
+        <p class="title">2. Research Experience</p>
+
+        <p>
+          During my middle school years, I set up the life ideal of
+          medical-industrial crossover and serving the country with technology.
+          Since my freshman year, I have participated in a total of eleven
+          domestic and international university projects, covering a variety of
+          fields such as computer vision, natural language processing,
+          reinforcement learning, impulse neural networks and bioinformatics. I
+          have explored my interest in medical image processing in active
+          practice. Three representative research experiences are listed below.
+        </p>
+        <p>
+          First of all, I joined Prof. Jianru Xue's group at Xi'an Jiaotong
+          University through the undergraduate "X Plan" research training
+          program of the School of Artificial Intelligence from December 2020 to
+          now, and I have been conducting research training under the guidance
+          of Prof. Xue. During this period, I have read more than 50 papers in
+          the field of computer vision and gained a preliminary understanding of
+          the field, and I have also learned to use common machine learning
+          frameworks, such as PyTorch, so that my programming skills have been
+          improved. Meanwhile, under the guidance of Prof. Xue Jianru, I
+          participated in the national college students' innovation project "AR
+          live navigation in short-distance scene" as the host, responsible for
+          image denoising and managing the team, and independently proposed a
+          moving target removal algorithm based on mask-generation model. After
+          the completion of the project, I carried out research on impulse
+          neural networks and reinforcement learning under the guidance of Prof.
+          Xue Jianru.
+        </p>
+        <p>
+          Secondly, from March 2021 to May 2022 I worked on pancreatic diagnosis
+          based on enhanced CT images under the guidance of Prof. Cui Wei from
+          the First Affiliated Hospital of Xi'an Jiaotong University and Prof.
+          Li Chen from the School of Computer Science and Technology. As the
+          only undergraduate student in the School of Artificial Intelligence
+          within the team, I was mainly responsible for the implementation of
+          the pancreatic cancer detection algorithm and lesion segmentation
+          algorithm. During the year-long project study, I learned the
+          characteristics and preferences of AI models in the medical field, and
+          studied more than twenty relevant literatures, which laid a solid
+          theoretical foundation for the subsequent research. Meanwhile, I
+          mastered the ability to communicate with members from different
+          disciplinary backgrounds during the project, which improved my
+          teamwork ability. After the completion of this project, we hope to
+          further dig deeper into the value of the dataset and algorithm
+          performance, with a view to publishing the results in high-quality
+          journals.
+        </p>
+        <p>
+          Finally, I have been working on segmentation algorithms for spatial
+          transcriptomics data under the guidance of Prof. Pingzhao Hu at the
+          University of Manitoba, Canada from December 2021 to present. The
+          weekly group meetings have greatly improved my oral presentation
+          skills and enhanced my English language proficiency. Based on the
+          theoretical accumulation of computer vision and bioinformatics, I have
+          studied more than ten spatial transcriptomics related literatures and
+          proposed a weakly supervised spatial transcriptome point cloud
+          segmentation algorithm.
+        </p>
+        <p class="title">3. Future Planning</p>
+
+        <p>
+          My main research interest is medical image processing. I would like to
+          understand the impact of AI technologies on medical diagnosis and
+          focus on exploring machine learning frameworks applicable to medical
+          histology data represented by weak supervision, small samples, and
+          small targets. My research strength is a solid and comprehensive
+          foundation in math, cognitive science, neuroscience, and machine
+          learning. I am able to combine medical knowledge and machine learning
+          theories to build models with the help of deep learning, reinforcement
+          learning and other tools to study medical image processing algorithms
+          and the intrinsic laws of medical histology data, just as my
+          scientific practice in deep learning-based cancer diagnosis.
+        </p>
+      </div>
+    </div>
+
+    <div v-else id="main">
+      <div class="title">
+        <a class="title_link" id="" href="#">个人陈述</a>
+        <a class="switch_link" @click="show = !show" href="#"
+          >[Switch to EN version]</a
+        >
+      </div>
+
+      <div class="content">
+        我将从以下几个方面介绍自己：
+
+        <p class="title">一、学习情况</p>
+
+        <p>
+          我高中就读于深圳红岭中学高中部，大一就读于西安交通大学工科试验班（电类），大二转入西安交通大学人工智能试验班，大三于加拿大曼尼托巴大学交流学习。
+        </p>
+
+        <p>
+          我学习优异，大一综合成绩91.05，排名4/1138，以书院第一的成绩获评国家奖学金。大二综合成绩92.43，学院排名3/70，获评旷视奖学金。我英语能力出色，四级成绩603，托福成绩89。我参加多项竞赛，获得国际基因工程机器大赛银奖，担任硬件组和干实验组负责人；作为主持人参与国家级大学生创新项目课题“短距离场景下AR实景导航”，该项目在电信学部47个项目中脱颖而出，通过结题答辩，获评优秀；作为主持人参与国家级大学生创新项目课题“基于深度学习的肾上腺肿瘤的诊断与临床决策”，承担建立模型等核心任务，该项目通过答辩并获评优秀。
+          大学前两年我打下了坚实的专业基础。我修读数学类课程共7门24学分，均分94.6；修读的人工智能相关课程，均分94.6。我部分课程的成绩为：计算神经工程99；认知心理学99；社会心理学98；概率统计与随机过程98；大学物理II98；大学物理I97；数据结构与算法95；线性代数与解解析结合94；高等数学I93；计算机体系结构92；高等数学II92。我通过层层选拔，获得CSC资助，在大三学年作为当年西安交通大学仅有的三名学生之一进入加拿大曼尼托巴大学交流学习。我踏实认真的学习态度被老师认可，西安交通大学任鹏举教授曾评价“Youcheng
+          Li was one of the best students of mine in the last several years.
+          Based on his solid knowledge, he quickly adapted to multiple tasks
+          assigned to him and had innovative minds on the course.”
+        </p>
+
+        <p class="title">二、科研经历</p>
+
+        <p>
+          我在中学时期树立了医工交叉，技术报国的人生理想。大一以来，我参加国内外高校课题共计十一项，覆盖计算机视觉、自然语言处理、强化学习、脉冲神经网络和生物信息学等多个领域。我在积极实践中探索出自己的兴趣，即医学图像处理。下面列举三项有代表性的科研经历。
+        </p>
+
+        <p>
+          首先，2020年12月至今我通过人工智能学院本科生“X计划”科研训练计划加入西安交通大学薛建儒教授课题组，在薛教授的指导下开展科研训练。期间，我研读计算机视觉领域前沿论文五十余篇，对该领域有初步的了解，并且学习机器学习常用框架如PyTorch等的使用，编程能力得到了提升。同时，在薛建儒教授的指导下，我作为主持人参与国家级大学生创新项目“短距离场景下AR实景导航”，负责图像去噪和管理团队，独立提出了一种基于掩膜-生成模型的移动目标去除算法。项目结题后，我在薛建儒教授的指导下开展脉冲神经网络和强化学习的相关研究。
+        </p>
+
+        <p>
+          其次，2021年3月至2022年5月我在西安交通大学一附院崔巍教授和计算机科学与技术学院李辰教授的指导下研究基于增强CT图像的胰腺诊断。作为团队内唯一人工智能学院本科生，我主要承担胰腺癌检测算法和病灶分割算法的实现。在长达一年项目学习中，我了解医学领域人工智能模型的特点和偏好，研读相关文献二十余篇，为后续研究打下了扎实的理论基础。同时，在项目中我掌握与不同学科背景的成员沟通能力，提高了我的团队协作能力。该项目结题后，我们希望在数据集和算法性能上进一步深挖价值，以期将成果在高质量期刊上发表。
+        </p>
+
+        <p>
+          最后，2021年12月至今我在加拿大曼尼托巴大学Pingzhao
+          Hu教授指导下研究空间转录组学数据的分割算法。每周一次的组会极大提高了我的口语表达能力，提升了我的英语水平。在之前计算机视觉、生物信息学的理论积累的基础之上，我研读十余篇空间转录组学相关文献，提出了一种弱监督的空间转录组点云分割算法。
+        </p>
+
+        <p class="title">三、未来规划</p>
+
+        <p>
+          我的主要研究兴趣是医学图像处理。我希望理解人工智能技术对医学诊断的影响，专注于探索适用于以弱监督、小样本、小目标为代表的医学组学数据的机器学习框架。我的研究优势是扎实全面的数学、认知科学、神经科学和机器学习基础。我能够将医学知识和机器学习理论结合，借助深度学习、强化学习等工具建立模型，研究医学图像处理算法和医学组学数据内在规律，正如我在基于深度学习的癌症诊断的科研实践一样。
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "home",
+  data() {
+    return {
+      show: true,
+    };
+  },
+  methods: {},
+  created() {},
+  mounted() {},
+};
+</script>
+<style scoped>
+@import url(./index.css);
+div.content > p {
+  line-height: 30px;
+  font-size: 1.2em;
+}
+
+p.title {
+  font-style: italic;
+  text-decoration: underline;
+  padding: 10px 0;
+  color: #3a87ad;
+}
+
+p.quote {
+  font-style: italic;
+  font-family: Arial;
+  padding-left: 30px;
+}
+</style>
